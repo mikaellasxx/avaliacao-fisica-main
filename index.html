@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=00403210-a976-45cd-b311-8352ee42001d
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Física Profissional — João Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Avalia%C3%A7%C3%A3o%20F%C3%ADsica%20Profissional%20%E2%80%94%20Jo%C3%A3o%20Paulo_arquivos/css2.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f3f1;
+      --paper: #ffffff;
+      --ink: #111111;
+      --muted: #666666;
+      --line: #d9d9d4;
+      --accent: #b20f1f;
+      --accent-soft: #f7e7ea;
+      --dark: #181818;
+      --dark-soft: #252525;
+      --success: #1f6b45;
+      --warn: #9f6a14;
+      --danger: #9b1c1c;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --radius: 14px;
+      --shadow: 0 12px 32px rgba(0,0,0,.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      letter-spacing: -0.02em;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    h1 { font-size: 3rem; line-height: .95; text-transform: uppercase; }
+    h2 { font-size: 1.8rem; text-transform: uppercase; }
+    h3 { font-size: 1.35rem; text-transform: uppercase; }
+    h4 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .04em; }
+    p { margin: 0; }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 80px;
+    }
+
+    .hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .logo-box {
+      width: 110px;
+      height: 110px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fafafa;
+      overflow: hidden;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 6px 10px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .hero-meta {
+      text-align: right;
+      font-size: .92rem;
+      color: var(--muted);
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(243,243,241,.94);
+      backdrop-filter: blur(10px);
+      padding: 10px 0 14px;
+      margin-bottom: 16px;
+    }
+
+    .toolbar-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: .9rem;
+      cursor: pointer;
+      transition: .2s ease;
+      min-height: 40px;
+    }
+
+    button:hover { border-color: #b8b8b0; transform: translateY(-1px); }
+    button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    button.dark { background: var(--dark); color: #fff; border-color: var(--dark); }
+    button.warn { background: #fff7eb; color: #7f5400; border-color: #edd8a3; }
+    button.danger { background: #fff1f1; color: #8d2222; border-color: #edc7c7; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .section {
+      grid-column: span 12;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-tag {
+      font-size: .8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .subgrid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .field { grid-column: span 3; display: flex; flex-direction: column; gap: 6px; }
+    .field.span-2 { grid-column: span 2; }
+    .field.span-4 { grid-column: span 4; }
+    .field.span-5 { grid-column: span 5; }
+    .field.span-6 { grid-column: span 6; }
+    .field.span-8 { grid-column: span 8; }
+    .field.span-9 { grid-column: span 9; }
+    .field.span-12 { grid-column: span 12; }
+
+    label {
+      font-size: .82rem;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      padding: 12px 12px;
+      font: inherit;
+      min-height: 46px;
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    input[readonly] { background: #f8f8f6; color: #4a4a4a; }
+
+    .options, .checklist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      padding: 10px 0 4px;
+    }
+
+    .options label, .checklist label {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: .95rem;
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .kpi {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fcfcfb;
+    }
+
+    .kpi small {
+      display: block;
+      color: var(--muted);
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .kpi strong {
+      display: block;
+      font-size: 1.5rem;
+      font-family: var(--font-display);
+      line-height: 1;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fcfcfb;
+    }
+
+    .card h4 { margin-bottom: 12px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: .94rem;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 10px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #f4f4f2;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-size: .78rem;
+      color: #444;
+    }
+
+    tr:nth-child(even) td { background: #fbfbfa; }
+
+    .report-only { display: none; }
+    .report-mode .edit-only { display: none !important; }
+    .report-mode .report-only { display: block; }
+    .report-mode .toolbar { display: none; }
+    .report-mode .hero { margin-top: 10px; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .arrow-up { color: var(--success); font-weight: 700; }
+    .arrow-down { color: var(--accent); font-weight: 700; }
+    .arrow-flat { color: var(--muted); font-weight: 700; }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .photo-box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fafafa;
+      min-height: 260px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      background: #efefef;
+    }
+
+    .photo-box .caption {
+      padding: 10px 12px;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #444;
+      font-weight: 700;
+      border-top: 1px solid var(--line);
+    }
+
+    .photo-empty {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: .92rem;
+      min-height: 230px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .muted { color: var(--muted); }
+    .tiny { font-size: .82rem; }
+    .hidden { display: none !important; }
+
+    .footer-note {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-meta { text-align: left; }
+      .field, .field.span-2, .field.span-4, .field.span-5, .field.span-6, .field.span-8, .field.span-9 { grid-column: span 12; }
+      .split, .summary-grid, .photos-grid, .kpis { grid-template-columns: 1fr; }
+    }
+
+    /* Relatório independente dos campos de edição. */
+    .report-mode .toolbar { display: block !important; }
+    .report-mode #app > .hero,
+    .report-mode #app > .grid > .section:not(.report-only) { display: none; }
+    .report-mode #app { max-width: 850px; }
+    .report-mode #app > .grid { display: block; }
+    #reportDocument { padding: 0; border: 0; background: transparent; box-shadow: none; }
+    .report-sheet {
+      background: #fff; padding: 38px 40px; margin-bottom: 24px;
+      border: 1px solid var(--line); box-shadow: var(--shadow);
+      font-family: Arial, sans-serif; font-size: 13px; line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+    .report-sheet h2, .report-sheet h3, .report-sheet h4 { font-family: Arial, sans-serif; }
+    .report-sheet h2 { font-size: 24px; text-transform: none; line-height: 1.2; }
+    .report-sheet h3 { font-size: 16px; text-transform: none; margin: 24px 0 12px; }
+    .report-sheet h4 { font-size: 12px; text-transform: none; letter-spacing: 0; margin-bottom: 6px; }
+    .report-masthead { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 18px; border-bottom: 3px solid var(--accent); }
+    .report-brand { font-size: 14px; font-weight: 800; letter-spacing: .08em; }
+    .report-contact { text-align: right; font-size: 10px; color: #555; }
+    .report-kicker { color: var(--accent); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin: 22px 0 8px; }
+    .report-student { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 8px 0 18px; }
+    .report-info { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 18px 0; }
+    .report-info small { display: block; color: #666; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; }
+    .report-objective { border-left: 3px solid var(--accent); padding: 12px 16px; background: #f7f5f5; margin: 18px 0; }
+    .report-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 20px 0; }
+    .report-metric { border: 1px solid #ddd; border-radius: 8px; padding: 14px 10px; }
+    .report-metric small { display: block; color: #666; font-size: 10px; margin-bottom: 8px; }
+    .report-metric strong { font-size: 21px; line-height: 1.2; display: block; }
+    .report-metric span { font-size: 10px; color: #555; }
+    .report-sheet table { font-size: 12px; margin: 8px 0 16px; table-layout: fixed; }
+    .report-sheet th { background: #f4f2f2; font-size: 10px; }
+    .report-sheet td, .report-sheet th { padding: 9px 10px; border: 0; border-bottom: 1px solid #ddd; }
+    .report-sheet th:first-child { width: 34%; }
+    .report-sheet p { white-space: pre-wrap; }
+    .report-note { font-size: 10px; color: #666; margin-top: 10px; }
+    .report-block { margin: 14px 0; padding: 14px 0; border-bottom: 1px solid #e4e4e4; }
+    .report-block p, .report-detail-value { white-space: pre-wrap; }
+    .report-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+    .report-detail { border-bottom: 1px solid #e4e4e4; padding: 8px 0; }
+    .report-detail-label { color: #666; font-size: 10px; display: block; }
+    .report-detail-value { display: block; font-size: 12px; }
+    .report-signature { margin-top: 40px; padding-top: 10px; border-top: 1px solid #333; max-width: 300px; }
+    .report-footer { margin-top: 26px; padding-top: 12px; border-top: 1px solid #ddd; display: flex; justify-content: space-between; gap: 20px; font-size: 10px; color: #666; }
+    #reportPhotos { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 20px; }
+    #reportPhotos .photo-box { min-height: 0; border-radius: 6px; }
+    #reportPhotos .photo-box img { height: 280px; object-fit: contain; background: #f7f7f7; }
+    #reportPhotos .caption { font-size: 10px; padding: 8px 12px; }
+    @media screen and (max-width: 600px) {
+      .report-sheet { padding: 24px 18px; }
+      .report-metrics, .report-info { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .report-detail-grid { grid-template-columns: 1fr; }
+      .report-masthead { flex-direction: column; gap: 8px; }
+      .report-contact { text-align: left; }
+      .report-sheet table { font-size: 10px; }
+      .report-sheet td, .report-sheet th { padding: 7px 4px; }
+    }
+    @page { size: A4; margin: 14mm 14mm; }
+    @media print {
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #fff; }
+      .toolbar, .report-mode .toolbar, .edit-only, .hide-print, #app > .hero,
+      #app > .grid > .section:not(.report-only) { display: none !important; }
+      .report-only, .report-mode .report-only { display: block !important; }
+      .wrap, .report-mode #app { max-width: none; padding: 0; margin: 0; }
+      #app > .grid { display: block; }
+      .report-sheet { padding: 0; border: 0; box-shadow: none; margin: 0; font-size: 12pt; line-height: 1.55; }
+      .report-sheet h2 { font-size: 22pt; }
+      .report-sheet h3 { font-size: 15pt; }
+      .report-sheet h4 { font-size: 12pt; }
+      .report-student { font-size: 25pt; }
+      .report-brand { font-size: 12pt; }
+      .report-sheet .tiny, .report-contact, .report-kicker,
+      .report-info small, .report-metric small, .report-metric span,
+      .report-note, .report-detail-label, .report-footer,
+      #reportPhotos .caption { font-size: 10pt; }
+      .report-metric strong { font-size: 22pt; }
+      .report-sheet table { font-size: 11pt; }
+      .report-sheet th { font-size: 10pt; }
+      .report-detail-value { font-size: 12pt; }
+      .report-detail { padding: 10px 0; }
+      .report-sheet + .report-sheet { break-before: page; page-break-before: always; }
+      .report-masthead, .report-metrics, .report-info, .report-detail,
+      .report-signature, .report-footer, tr, .photo-box { break-inside: avoid; page-break-inside: avoid; }
+      h2, h3, h4, .report-kicker { break-after: avoid; page-break-after: avoid; }
+      .report-block p { orphans: 3; widows: 3; }
+      thead { display: table-header-group; }
+      #reportPhotos .photo-box img { height: 84mm; }
+      .report-sheet a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar hide-print">
+    <div class="toolbar-inner">
+      <a href="comparar.html" style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:10px;background:#181818;color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;">Comparar avaliações (protótipo)</a>
+      <button type="button" onclick="newForm()">Novo preenchimento</button>
+      <button type="button" onclick="saveProgress()">Salvar progresso</button>
+      <button type="button" class="primary" onclick="enableReportMode()">Modo relatório</button>
+      <button type="button" class="dark" onclick="disableReportMode()">Voltar para edição</button>
+      <button type="button" class="warn" onclick="printReport()">Imprimir / Salvar PDF</button>
+      <button type="button" class="danger" onclick="clearAllData()">Limpar tudo</button>
+    </div>
+  </div>
+
+  <div class="wrap" id="app">
+    <section class="hero cover">
+      <div class="logo-box">
+        <img src="logo-joao-paulo.jpg" alt="Logo João Paulo">
+      </div>
+      <div>
+        <span class="eyebrow">Avaliação física profissional</span>
+        <h1>Avaliação Física<br>Profissional</h1>
+        <p class="muted" style="margin-top:10px; max-width: 70ch;">Ficha
+ inteligente para avaliação presencial, reavaliação periódica e geração 
+de relatório final com comparativos, composição corporal, testes físicos
+ e registro fotográfico.</p>
+      </div>
+      <div class="hero-meta">
+        <strong style="display:block; color:var(--ink); font-size:1rem; margin-bottom:6px;">JOÃO PAULO | TREINADOR</strong>
+        <div>WhatsApp: 21 98029-3935</div>
+        <div><a href="https://www.instagram.com/joaopaulomacarioo?igsh=ZzVxamkxMmo5c2w1&amp;utm_source=qr" target="_blank" style="color:inherit; text-decoration:none;">@joaopaulomacarioo</a></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="section section-block" data-title="Identificação">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 1</div>
+            <h2>Identificação</h2>
+          </div>
+        </div>
+        <div class="subgrid">
+          <div class="field span-6"><label>Nome completo</label><input data-store="" type="text" id="nome"></div>
+          <div class="field span-3"><label>Data de nascimento</label><input data-store="" type="date" id="dataNascimento" onchange="updateAge()"></div>
+          <div class="field span-3"><label>Idade</label><input data-store="" type="text" id="idade" readonly="readonly"></div>
+          <div class="field span-3"><label>Sexo</label><select data-store="" id="sexo" onchange="calculateAll()"><option value="" selected="selected">Selecione</option><option value="Masculino">Masculino</option><option value="Feminino">Feminino</option></select></div>
+          <div class="field span-3"><label>Telefone</label><input data-store="" type="text" id="telefone"></div>
+          <div class="field span-3"><label>Profissão</label><input data-store="" type="text" id="profissao"></div>
+          <div class="field span-3"><label>Avaliador</label><input data-store="" type="text" id="avaliador" value="JOÃO PAULO | TREINADOR"></div>
+          <div class="field span-4"><label>Objetivo principal</label>
+            <select data-store="" id="objetivoSelect">
+              <option value="" selected="selected">Selecione</option>
+              <option>Emagrecimento</option>
+              <option>Hipertrofia</option>
+              <option>Condicionamento</option>
+              <option>Saúde</option>
+              <option>Performance</option>
+              <option>Reabilitação</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field span-8"><label>Objetivo complementar / texto livre</label><input data-store="" type="text" id="objetivoLivre"></div>
+          <div class="field span-3"><label>Data da avaliação</label><input data-store="" type="date" id="dataAvaliacao"></div>
+          <div class="field span-3"><label>Data da reavaliação</label><input data-store="" type="date" id="dataReavaliacao"></div>
+          <div class="field span-6"><label>Observações iniciais</label><input data-store="" type="text" id="obsIniciais"></div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Anamnese e risco">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 2</div>
+            <h2>Anamnese, PAR-Q e risco cardiovascular</h2>
+          </div>
+        </div>
+        <div class="subgrid">
+          <div class="field span-4"><label>Histórico de doenças</label><textarea data-store="" id="historicoDoencas"></textarea></div>
+          <div class="field span-4"><label>Uso de medicamentos</label><textarea data-store="" id="medicamentos"></textarea></div>
+          <div class="field span-4"><label>Lesões prévias</label><textarea data-store="" id="lesoes"></textarea></div>
+          <div class="field span-4"><label>Cirurgias</label><textarea data-store="" id="cirurgias"></textarea></div>
+          <div class="field span-4"><label>Restrições articulares</label><textarea data-store="" id="restricoes"></textarea></div>
+          <div class="field span-4"><label>Dores recorrentes</label>
+            <div class="card">
+              <div class="options">
+                <label><input data-store="" type="radio" name="dorRecorrente" value="Não"> Não</label>
+                <label><input data-store="" type="radio" name="dorRecorrente" value="Sim"> Sim</label>
+              </div>
+              <input data-store="" type="text" id="dorLocal" placeholder="Local da dor">
+              <textarea data-store="" id="dorObs" placeholder="Observação"></textarea>
+            </div>
+          </div>
+
+          <div class="field span-3"><label>Tabagismo</label>
+            <div class="card">
+              <div class="options">
+                <label><input data-store="" type="radio" name="tabagismo" value="Não"> Não</label>
+                <label><input data-store="" type="radio" name="tabagismo" value="Sim"> Sim</label>
+              </div>
+              <input data-store="" type="text" id="tabagismoFreq" placeholder="Frequência">
+            </div>
+          </div>
+          <div class="field span-3"><label>Álcool</label>
+            <div class="card">
+              <div class="options">
+                <label><input data-store="" type="radio" name="alcool" value="Não"> Não</label>
+                <label><input data-store="" type="radio" name="alcool" value="Sim"> Sim</label>
+              </div>
+              <input data-store="" type="text" id="alcoolFreq" placeholder="Frequência">
+            </div>
+          </div>
+          <div class="field span-2"><label>Qualidade do sono</label><select data-store="" id="sono"><option value="" selected="selected"></option><option>Ruim</option><option>Regular</option><option>Boa</option><option>Ótima</option></select></div>
+          <div class="field span-2"><label>Nível de estresse</label><select data-store="" id="estresse"><option value="" selected="selected"></option><option>Baixo</option><option>Moderado</option><option>Alto</option></select></div>
+          <div class="field span-2"><label>Nível de atividade física</label><select data-store="" id="atividadeFisica"><option value="" selected="selected"></option><option>Sedentário</option><option>Pouco ativo</option><option>Ativo</option><option>Muito ativo</option></select></div>
+
+          <div class="field span-12">
+            <label>PAR-Q completo tradicional</label>
+            <div class="card checklist">
+              <label><input data-store="" class="parq" type="checkbox" id="parq1"> Algum médico já disse que você possui problema cardíaco e que só deve realizar atividade física supervisionada?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq2"> Você sente dor no peito quando pratica atividade física?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq3"> No último mês, você sentiu dor no peito mesmo sem realizar atividade física?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq4"> Você perde o equilíbrio por tontura ou já perdeu a consciência?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq5"> Você tem algum problema ósseo ou articular que possa piorar com atividade física?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq6"> Você faz uso de medicamentos para pressão arterial ou coração?</label>
+              <label><input data-store="" class="parq" type="checkbox" id="parq7"> Existe alguma outra razão pela qual você não deva praticar atividade física?</label>
+            </div>
+          </div>
+
+          <div class="field span-3"><label>Risco cardiovascular sugerido</label><input data-store="" type="text" id="riscoCardio" readonly="readonly"></div>
+          <div class="field span-9"><label>Observação clínica</label><textarea data-store="" id="obsClinica"></textarea></div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Sinais iniciais">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 3</div>
+            <h2>Sinais iniciais</h2>
+          </div>
+        </div>
+        <div class="subgrid">
+          <div class="field span-4"><label>SpO2 (%)</label><input data-store="" type="number" id="spo2" step="0.1"></div>
+          <div class="field span-4"><label>Pressão arterial</label><input data-store="" type="text" id="pressao" placeholder="Ex.: 120x80"></div>
+          <div class="field span-4"><label>FC de repouso (bpm)</label><input data-store="" type="number" id="fcRepouso"></div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Composição corporal">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 4</div>
+            <h2>Composição corporal</h2>
+          </div>
+        </div>
+        <div class="split">
+          <div class="card">
+            <h4>Medidas básicas e histórico comparativo</h4>
+            <div class="subgrid">
+              <div class="field span-4"><label>Peso atual (kg)</label><input data-store="" type="number" id="pesoAtual" step="0.1" oninput="calculateAll()"></div>
+              <div class="field span-4"><label>Altura (cm)</label><input data-store="" type="number" id="altura" step="0.1" oninput="calculateAll()"></div>
+              <div class="field span-4"><label>IMC</label><input data-store="" type="text" id="imc" readonly="readonly"></div>
+              <div class="field span-4"><label>Peso anterior (kg)</label><input data-store="" type="number" id="pesoAnterior" step="0.1" oninput="calculateComparisons()"></div>
+              <div class="field span-4"><label>% gordura anterior</label><input data-store="" type="number" id="gorduraAnterior" step="0.1" oninput="calculateComparisons()"></div>
+              <div class="field span-4"><label>Massa magra anterior (kg)</label><input data-store="" type="number" id="massaMagraAnterior" step="0.1" oninput="calculateComparisons()"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Resultado automático</h4>
+            <div class="kpis">
+              <div class="kpi"><small>% de gordura</small><strong id="kpiGordura">—</strong></div>
+              <div class="kpi"><small>Classificação</small><strong id="kpiClassificacao" style="font-size:1.1rem; line-height:1.1;">—</strong></div>
+              <div class="kpi"><small>Massa gorda</small><strong id="kpiMassaGorda">—</strong></div>
+              <div class="kpi"><small>Massa magra</small><strong id="kpiMassaMagra">—</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <h4>Pollock 7 dobras</h4>
+          <div class="subgrid">
+            <div class="field span-2"><label>Peitoral</label><input data-store="" type="number" id="dobraPeitoral" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Axilar média</label><input data-store="" type="number" id="dobraAxilar" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Tríceps</label><input data-store="" type="number" id="dobraTriceps" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Subescapular</label><input data-store="" type="number" id="dobraSubescapular" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Abdominal</label><input data-store="" type="number" id="dobraAbdominal" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Supra-ilíaca</label><input data-store="" type="number" id="dobraSuprailiaca" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Coxa</label><input data-store="" type="number" id="dobraCoxa" step="0.1" oninput="calculateAll()"></div>
+            <div class="field span-2"><label>Somatório 7 dobras</label><input data-store="" type="text" id="somatorioDobras" readonly="readonly"></div>
+            <div class="field span-2"><label>% gordura</label><input data-store="" type="text" id="gorduraPercentual" readonly="readonly"></div>
+            <div class="field span-2"><label>Classificação</label><input data-store="" type="text" id="classificacaoGordura" readonly="readonly"></div>
+            <div class="field span-2"><label>Massa gorda (kg / %)</label><input data-store="" type="text" id="massaGordaResumo" readonly="readonly"></div>
+            <div class="field span-2"><label>Massa magra (kg / %)</label><input data-store="" type="text" id="massaMagraResumo" readonly="readonly"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Perimetrias">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 5</div>
+            <h2>Perimetrias</h2>
+          </div>
+        </div>
+        <div class="subgrid">
+          <div class="field span-3"><label>Ombros (cm)</label><input data-store="" type="number" step="0.1" id="perOmbros"></div>
+          <div class="field span-3"><label>Tórax braço aberto (cm)</label><input data-store="" type="number" step="0.1" id="perToraxAberto"></div>
+          <div class="field span-3"><label>Cintura (cm)</label><input data-store="" type="number" step="0.1" id="perCintura"></div>
+          <div class="field span-3"><label>Abdômen (cm)</label><input data-store="" type="number" step="0.1" id="perAbdomen"></div>
+          <div class="field span-3"><label>Quadril (cm)</label><input data-store="" type="number" step="0.1" id="perQuadril"></div>
+          <div class="field span-3"><label>Braço dir. relaxado (cm)</label><input data-store="" type="number" step="0.1" id="perBracoDirRelax"></div>
+          <div class="field span-3"><label>Braço esq. relaxado (cm)</label><input data-store="" type="number" step="0.1" id="perBracoEsqRelax"></div>
+          <div class="field span-3"><label>Braço dir. contraído (cm)</label><input data-store="" type="number" step="0.1" id="perBracoDirCont"></div>
+          <div class="field span-3"><label>Braço esq. contraído (cm)</label><input data-store="" type="number" step="0.1" id="perBracoEsqCont"></div>
+          <div class="field span-3"><label>Antebraço dir. (cm)</label><input data-store="" type="number" step="0.1" id="perAntebracoDir"></div>
+          <div class="field span-3"><label>Antebraço esq. (cm)</label><input data-store="" type="number" step="0.1" id="perAntebracoEsq"></div>
+          <div class="field span-3"><label>Coxa dir. (cm)</label><input data-store="" type="number" step="0.1" id="perCoxaDir"></div>
+          <div class="field span-3"><label>Coxa esq. (cm)</label><input data-store="" type="number" step="0.1" id="perCoxaEsq"></div>
+          <div class="field span-3"><label>Panturrilha dir. (cm)</label><input data-store="" type="number" step="0.1" id="perPantDir"></div>
+          <div class="field span-3"><label>Panturrilha esq. (cm)</label><input data-store="" type="number" step="0.1" id="perPantEsq"></div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Testes físicos">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 6</div>
+            <h2>Testes físicos</h2>
+          </div>
+        </div>
+        <div class="split">
+          <div class="card">
+            <h4>Preensão manual</h4>
+            <div class="subgrid">
+              <div class="field span-3"><label>Mão direita</label><input data-store="" type="number" step="0.1" id="preensaoDir"></div>
+              <div class="field span-3"><label>Mão esquerda</label><input data-store="" type="number" step="0.1" id="preensaoEsq"></div>
+              <div class="field span-6"><label>Observações</label><input data-store="" type="text" id="preensaoObs" placeholder="Melhor de 3 tentativas"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Banco de Wells</h4>
+            <div class="subgrid">
+              <div class="field span-3"><label>Tentativa 1</label><input data-store="" type="number" step="0.1" id="wells1"></div>
+              <div class="field span-3"><label>Tentativa 2</label><input data-store="" type="number" step="0.1" id="wells2"></div>
+              <div class="field span-3"><label>Tentativa 3</label><input data-store="" type="number" step="0.1" id="wells3" oninput="calculateWells()"></div>
+              <div class="field span-3"><label>Melhor resultado</label><input data-store="" type="text" id="wellsMelhor" readonly="readonly"></div>
+              <div class="field span-6"><label>Classificação</label><input data-store="" type="text" id="wellsClass"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:18px;">
+          <h4>Desempenho</h4>
+          <div class="subgrid">
+            <div class="field span-3"><label>Prancha (segundos)</label><input data-store="" type="number" id="pranchaSeg"></div>
+            <div class="field span-3"><label>Abdominal máx. em 30s</label><input data-store="" type="number" id="abdominal30s"></div>
+            <div class="field span-3"><label>Flexão em 30s</label><input data-store="" type="number" id="flexao30s"></div>
+            <div class="field span-3"><label>Modalidade flexão</label><select data-store="" id="flexaoModalidade"><option value="" selected="selected"></option><option>Tradicional</option><option>Joelhos apoiados</option></select></div>
+            <div class="field span-6"><label>Observações técnicas</label><input data-store="" type="text" id="flexaoObs"></div>
+            <div class="field span-6"><label>Classificação</label><input data-store="" type="text" id="flexaoClass"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Postura e mobilidade">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 7</div>
+            <h2>Postura e mobilidade</h2>
+          </div>
+        </div>
+        <div class="split">
+          <div class="card">
+            <h4>Avaliação postural</h4>
+            <table>
+              <thead><tr><th>Segmento</th><th>Normal</th><th>Alterado</th><th>Observação</th></tr></thead>
+              <tbody>
+                <tr><td>Cabeça</td><td><input data-store="" type="radio" name="postCabeca" value="Normal"></td><td><input data-store="" type="radio" name="postCabeca" value="Alterado"></td><td><input data-store="" type="text" id="postCabecaObs"></td></tr>
+                <tr><td>Ombros</td><td><input data-store="" type="radio" name="postOmbros" value="Normal"></td><td><input data-store="" type="radio" name="postOmbros" value="Alterado"></td><td><input data-store="" type="text" id="postOmbrosObs"></td></tr>
+                <tr><td>Escápulas</td><td><input data-store="" type="radio" name="postEscapulas" value="Normal"></td><td><input data-store="" type="radio" name="postEscapulas" value="Alterado"></td><td><input data-store="" type="text" id="postEscapulasObs"></td></tr>
+                <tr><td>Coluna torácica</td><td><input data-store="" type="radio" name="postToracica" value="Normal"></td><td><input data-store="" type="radio" name="postToracica" value="Alterado"></td><td><input data-store="" type="text" id="postToracicaObs"></td></tr>
+                <tr><td>Coluna lombar</td><td><input data-store="" type="radio" name="postLombar" value="Normal"></td><td><input data-store="" type="radio" name="postLombar" value="Alterado"></td><td><input data-store="" type="text" id="postLombarObs"></td></tr>
+                <tr><td>Pelve</td><td><input data-store="" type="radio" name="postPelve" value="Normal"></td><td><input data-store="" type="radio" name="postPelve" value="Alterado"></td><td><input data-store="" type="text" id="postPelveObs"></td></tr>
+                <tr><td>Joelhos</td><td><input data-store="" type="radio" name="postJoelhos" value="Normal"></td><td><input data-store="" type="radio" name="postJoelhos" value="Alterado"></td><td><input data-store="" type="text" id="postJoelhosObs"></td></tr>
+                <tr><td>Pés</td><td><input data-store="" type="radio" name="postPes" value="Normal"></td><td><input data-store="" type="radio" name="postPes" value="Alterado"></td><td><input data-store="" type="text" id="postPesObs"></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h4>Mobilidade</h4>
+            <table>
+              <thead><tr><th>Região</th><th>Preservada</th><th>Limitada</th><th>Observação</th></tr></thead>
+              <tbody>
+                <tr><td>Ombros</td><td><input data-store="" type="radio" name="mobOmbros" value="Preservada"></td><td><input data-store="" type="radio" name="mobOmbros" value="Limitada"></td><td><input data-store="" type="text" id="mobOmbrosObs"></td></tr>
+                <tr><td>Quadril</td><td><input data-store="" type="radio" name="mobQuadril" value="Preservada"></td><td><input data-store="" type="radio" name="mobQuadril" value="Limitada"></td><td><input data-store="" type="text" id="mobQuadrilObs"></td></tr>
+                <tr><td>Tornozelos</td><td><input data-store="" type="radio" name="mobTornozelo" value="Preservada"></td><td><input data-store="" type="radio" name="mobTornozelo" value="Limitada"></td><td><input data-store="" type="text" id="mobTornozeloObs"></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Registro fotográfico">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 8</div>
+            <h2>Registro fotográfico</h2>
+          </div>
+        </div>
+        <div class="subgrid edit-only" style="margin-bottom:16px;">
+          <div class="field span-3"><label>Foto frontal</label><input class="photo-input" type="file" accept="image/*" data-preview="previewFrontal"></div>
+          <div class="field span-3"><label>Perfil direito</label><input class="photo-input" type="file" accept="image/*" data-preview="previewPerfilDir"></div>
+          <div class="field span-3"><label>Perfil esquerdo</label><input class="photo-input" type="file" accept="image/*" data-preview="previewPerfilEsq"></div>
+          <div class="field span-3"><label>Foto posterior</label><input class="photo-input" type="file" accept="image/*" data-preview="previewPosterior"></div>
+        </div>
+        <div class="photos-grid">
+          <div class="photo-box" id="boxFrontal"><div class="photo-empty">Envie a foto frontal</div><img id="previewFrontal" class="hidden" alt="Foto frontal"><div class="caption">Frontal</div></div>
+          <div class="photo-box" id="boxPerfilDir"><div class="photo-empty">Envie a foto de perfil direito</div><img id="previewPerfilDir" class="hidden" alt="Perfil direito"><div class="caption">Perfil direito</div></div>
+          <div class="photo-box" id="boxPerfilEsq"><div class="photo-empty">Envie a foto de perfil esquerdo</div><img id="previewPerfilEsq" class="hidden" alt="Perfil esquerdo"><div class="caption">Perfil esquerdo</div></div>
+          <div class="photo-box" id="boxPosterior"><div class="photo-empty">Envie a foto posterior</div><img id="previewPosterior" class="hidden" alt="Foto posterior"><div class="caption">Posterior</div></div>
+        </div>
+      </section>
+
+      <section class="section section-block" data-title="Objetivos e conduta">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">Etapa 9</div>
+            <h2>Objetivos e conduta</h2>
+          </div>
+        </div>
+        <div class="subgrid">
+          <div class="field span-6"><label>Meta estética</label><textarea data-store="" id="metaEstetica"></textarea></div>
+          <div class="field span-6"><label>Meta de performance</label><textarea data-store="" id="metaPerformance"></textarea></div>
+          <div class="field span-4"><label>Pontos de atenção</label><textarea data-store="" id="pontosAtencao"></textarea></div>
+          <div class="field span-4"><label>Recomendações iniciais</label><textarea data-store="" id="recomendacoes"></textarea></div>
+          <div class="field span-4"><label>Estratégia inicial</label><textarea data-store="" id="estrategiaInicial"></textarea></div>
+          <div class="field span-8"><label>Conduta do avaliador</label><textarea data-store="" id="conduta"></textarea></div>
+          <div class="field span-4"><label>Data da próxima reavaliação</label><input data-store="" type="date" id="proximaReavaliacao"></div>
+        </div>
+      </section>
+
+      <section class="section report-only" id="reportDocument" aria-label="Relatório da avaliação física">
+        <article class="report-sheet">
+          <header class="report-masthead">
+            <div><div class="report-brand">JOÃO PAULO</div><div class="tiny muted">Treinamento &amp; acompanhamento</div></div>
+            <div class="report-contact">Avaliação física profissional<br>WhatsApp: 21 98029-3935<br>@joaopaulomacarioo</div>
+          </header>
+          <div class="report-kicker">Relatório individual • Avaliação física</div>
+          <div class="report-student" id="r_nome">—</div>
+          <div class="report-info">
+            <div><small>Data da avaliação</small><span data-report-field="dataAvaliacao" data-report-date></span></div>
+            <div><small>Idade</small><span id="r_idade">—</span></div>
+            <div><small>Avaliador</small><span data-report-field="avaliador"></span></div>
+          </div>
+          <div class="report-objective"><h4>Objetivo do acompanhamento</h4><p id="r_objetivo">—</p></div>
+          <h3>Composição corporal</h3>
+          <div class="report-metrics">
+            <div class="report-metric"><small>Peso atual</small><strong id="r_peso">—</strong></div>
+            <div class="report-metric"><small>Gordura corporal</small><strong id="r_gordura">—</strong><span id="r_classGord">—</span></div>
+            <div class="report-metric"><small>Massa magra</small><strong id="r_magra">—</strong></div>
+            <div class="report-metric"><small>IMC</small><strong id="r_imc">—</strong><span>kg/m²</span></div>
+          </div>
+          <table aria-label="Composição corporal detalhada"><tbody>
+            <tr><th>Massa gorda</th><td id="r_massaGorda">—</td><th>Massa magra</th><td id="r_massaMagra">—</td></tr>
+          </tbody></table>
+          <h3>Comparativo com a avaliação anterior</h3>
+          <table><thead><tr><th>Indicador</th><th>Anterior</th><th>Atual</th><th>Variação</th></tr></thead><tbody>
+            <tr><td>Peso</td><td id="cmpPesoAnterior">—</td><td id="cmpPesoAtual">—</td><td id="cmpPesoArrow">—</td></tr>
+            <tr><td>Gordura corporal</td><td id="cmpGordAnterior">—</td><td id="cmpGordAtual">—</td><td id="cmpGordArrow">—</td></tr>
+            <tr><td>Massa magra</td><td id="cmpMagraAnterior">—</td><td id="cmpMagraAtual">—</td><td id="cmpMagraArrow">—</td></tr>
+          </tbody></table>
+          <p class="report-note">Variação = resultado atual − anterior. A interpretação depende do objetivo individual. Traços indicam dados não informados ou insuficientes para cálculo.</p>
+          <footer class="report-footer"><span>Acompanhamento individual</span><span>01 / Resumo e evolução</span></footer>
+        </article>
+        <article class="report-sheet">
+          <header class="report-masthead"><div class="report-brand">RESULTADOS DA AVALIAÇÃO</div><div class="report-contact" data-report-field="nome"></div></header>
+          <div class="report-kicker">Medidas &amp; desempenho</div>
+          <h2>Seus resultados em detalhe</h2>
+          <div id="reportMeasurements"></div>
+          <footer class="report-footer"><span>Unidades indicadas junto às medidas</span><span>02 / Medidas e testes</span></footer>
+        </article>
+        <article class="report-sheet hidden" id="reportClinicalSheet">
+          <header class="report-masthead"><div class="report-brand">HISTÓRICO &amp; MOVIMENTO</div><div class="report-contact" data-report-field="nome"></div></header>
+          <div class="report-kicker">Registros da avaliação</div>
+          <h2>Histórico, postura e mobilidade</h2>
+          <p class="report-note">Classificação de triagem registrada pelo sistema: <strong id="r_risco">—</strong></p>
+          <div id="reportClinical"></div>
+          <p class="report-note">Os registros desta seção reproduzem as informações preenchidas pelo avaliador.</p>
+          <footer class="report-footer"><span>Acompanhamento individual</span><span>Histórico e movimento</span></footer>
+        </article>
+        <article class="report-sheet">
+          <header class="report-masthead"><div class="report-brand">PLANO DE ACOMPANHAMENTO</div><div class="report-contact" data-report-field="nome"></div></header>
+          <div class="report-kicker">Orientações &amp; próximos passos</div>
+          <h2>Direcionamento individual</h2>
+          <div class="report-block"><h4>Resumo da avaliação</h4><p id="r_resumoAvaliacao">—</p></div>
+          <div class="report-block"><h4>Meta estética</h4><p data-report-field="metaEstetica">—</p></div>
+          <div class="report-block"><h4>Meta de performance</h4><p id="r_pontosFortes">—</p></div>
+          <div class="report-block"><h4>Pontos de atenção</h4><p id="r_pontosAtencao">—</p></div>
+          <div class="report-block"><h4>Recomendações e conduta</h4><p id="r_direcionamento">—</p></div>
+          <div class="report-info"><div><small>Próxima reavaliação</small><span data-report-field="proximaReavaliacao" data-report-date></span></div></div>
+          <div class="report-signature"><strong data-report-field="avaliador"></strong><div class="report-note">Profissional responsável pela avaliação</div></div>
+          <footer class="report-footer"><span>Documento para acompanhamento e reavaliação periódica.</span><span>Orientações</span></footer>
+        </article>
+        <article class="report-sheet hidden" id="reportPhotoSheet">
+          <header class="report-masthead"><div class="report-brand">REGISTRO FOTOGRÁFICO</div><div class="report-contact" data-report-field="nome"></div></header>
+          <div class="report-kicker">Acompanhamento visual</div>
+          <h2>Registro da avaliação</h2>
+          <div class="photos-grid" id="reportPhotos"></div>
+          <footer class="report-footer"><span data-report-field="dataAvaliacao" data-report-date></span><span>Registro fotográfico</span></footer>
+        </article>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'avaliacao_fisica_profissional_joao_paulo_v1';
+    const PHOTO_KEY = 'avaliacao_fisica_profissional_joao_paulo_photos_v1';
+
+    function $(id){ return document.getElementById(id); }
+    function getNumber(id){ const v = parseFloat($(id)?.value); return isNaN(v) ? 0 : v; }
+    function setValue(id, value){ if($(id)) $(id).value = value; }
+    function formatNum(n, digits=1){ return (isNaN(n) || !isFinite(n)) ? '—' : n.toFixed(digits).replace('.', ','); }
+    function formatKg(n){ return (isNaN(n) || !isFinite(n)) ? '—' : formatNum(n,1) + ' kg'; }
+    function formatPct(n){ return (isNaN(n) || !isFinite(n)) ? '—' : formatNum(n,1) + '%'; }
+
+    function updateAge() {
+      const date = $('dataNascimento').value;
+      if (!date) { $('idade').value = ''; saveProgress(); calculateAll(); return; }
+      const birth = new Date(date + 'T00:00:00');
+      const today = new Date();
+      let age = today.getFullYear() - birth.getFullYear();
+      const m = today.getMonth() - birth.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+      $('idade').value = age > 0 ? age : '';
+      saveProgress();
+      calculateAll();
+    }
+
+    function classifyBodyFat(sex, bf) {
+      if (!sex || !bf) return '';
+      if (sex === 'Masculino') {
+        if (bf < 6) return 'Muito baixo';
+        if (bf < 14) return 'Atlético';
+        if (bf < 18) return 'Bom';
+        if (bf < 25) return 'Médio';
+        return 'Elevado';
+      }
+      if (bf < 14) return 'Muito baixo';
+      if (bf < 21) return 'Atlético';
+      if (bf < 25) return 'Bom';
+      if (bf < 32) return 'Médio';
+      return 'Elevado';
+    }
+
+    function calculatePollock7() {
+      const age = parseInt($('idade').value || '0', 10);
+      const sex = $('sexo').value;
+      const sum = getNumber('dobraPeitoral') + getNumber('dobraAxilar') + getNumber('dobraTriceps') + getNumber('dobraSubescapular') + getNumber('dobraAbdominal') + getNumber('dobraSuprailiaca') + getNumber('dobraCoxa');
+      $('somatorioDobras').value = sum ? formatNum(sum, 1) + ' mm' : '';
+      if (!sum || !age || !sex) {
+        setValue('gorduraPercentual',''); setValue('classificacaoGordura',''); setValue('massaGordaResumo',''); setValue('massaMagraResumo','');
+        return { bf: 0, classif: '', massaGorda: 0, massaMagra: 0, sum: sum || 0 };
+      }
+      let density = 0;
+      if (sex === 'Masculino') {
+        density = 1.112 - (0.00043499 * sum) + (0.00000055 * Math.pow(sum,2)) - (0.00028826 * age);
+      } else {
+        density = 1.097 - (0.00046971 * sum) + (0.00000056 * Math.pow(sum,2)) - (0.00012828 * age);
+      }
+      const bf = ((4.95 / density) - 4.5) * 100;
+      const peso = getNumber('pesoAtual');
+      const massaGorda = peso ? peso * (bf / 100) : 0;
+      const massaMagra = peso ? peso - massaGorda : 0;
+      const classif = classifyBodyFat(sex, bf);
+      $('gorduraPercentual').value = formatNum(bf,1) + '%';
+      $('classificacaoGordura').value = classif;
+      $('massaGordaResumo').value = peso ? formatNum(massaGorda,1) + ' kg / ' + formatNum(bf,1) + '%' : '';
+      $('massaMagraResumo').value = peso ? formatNum(massaMagra,1) + ' kg / ' + formatNum(100 - bf,1) + '%' : '';
+      return { bf, classif, massaGorda, massaMagra, sum };
+    }
+
+    function calculateIMC() {
+      const peso = getNumber('pesoAtual');
+      const alturaCm = getNumber('altura');
+      if (!peso || !alturaCm) { $('imc').value = ''; return 0; }
+      const alturaM = alturaCm / 100;
+      const imc = peso / (alturaM * alturaM);
+      $('imc').value = formatNum(imc,1);
+      return imc;
+    }
+
+    function calculateRisk() {
+      const parqCount = [...document.querySelectorAll('.parq')].filter(c => c.checked).length;
+      let risk = 'Baixo';
+      if (parqCount >= 1) risk = 'Moderado';
+      if (parqCount >= 3) risk = 'Alto';
+      $('riscoCardio').value = risk;
+      return risk;
+    }
+
+    function calculateWells() {
+      const values = [getNumber('wells1'), getNumber('wells2'), getNumber('wells3')].filter(v => v > 0);
+      const best = values.length ? Math.max(...values) : 0;
+      $('wellsMelhor').value = best ? formatNum(best,1) + ' cm' : '';
+      saveProgress();
+    }
+
+    function comparisonArrow(previous, current, lowerIsBetter=false, unit='') {
+      if (!previous || !current) return '—';
+      const delta = current - previous;
+      return (delta > 0 ? '+' : '') + formatNum(delta, 1) + (unit ? ' ' + unit : '');
+    }
+
+    function calculateComparisons() {
+      const pesoAnt = getNumber('pesoAnterior');
+      const pesoAt = getNumber('pesoAtual');
+      const gorduraAnt = getNumber('gorduraAnterior');
+      const gorduraAt = parseFloat(($('gorduraPercentual').value || '').replace('%','').replace(',','.')) || 0;
+      const magraAnt = getNumber('massaMagraAnterior');
+      const magraAt = (() => {
+        const v = ($('massaMagraResumo').value || '').split(' kg')[0].replace(',','.');
+        return parseFloat(v) || 0;
+      })();
+
+      $('cmpPesoAnterior').textContent = pesoAnt ? formatNum(pesoAnt,1) + ' kg' : '—';
+      $('cmpPesoAtual').textContent = pesoAt ? formatNum(pesoAt,1) + ' kg' : '—';
+      $('cmpPesoArrow').innerHTML = comparisonArrow(pesoAnt, pesoAt, false, 'kg');
+
+      $('cmpGordAnterior').textContent = gorduraAnt ? formatNum(gorduraAnt,1) + '%' : '—';
+      $('cmpGordAtual').textContent = gorduraAt ? formatNum(gorduraAt,1) + '%' : '—';
+      $('cmpGordArrow').innerHTML = comparisonArrow(gorduraAnt, gorduraAt, true, 'p.p.');
+
+      $('cmpMagraAnterior').textContent = magraAnt ? formatNum(magraAnt,1) + ' kg' : '—';
+      $('cmpMagraAtual').textContent = magraAt ? formatNum(magraAt,1) + ' kg' : '—';
+      $('cmpMagraArrow').innerHTML = comparisonArrow(magraAnt, magraAt, false, 'kg');
+    }
+
+    function updateKpis(result, imc, risk) {
+      $('kpiGordura').textContent = result.bf ? formatNum(result.bf,1) + '%' : '—';
+      $('kpiClassificacao').textContent = result.classif || '—';
+      $('kpiMassaGorda').textContent = result.massaGorda ? formatNum(result.massaGorda,1) + ' kg' : '—';
+      $('kpiMassaMagra').textContent = result.massaMagra ? formatNum(result.massaMagra,1) + ' kg' : '—';
+
+      $('r_nome').textContent = $('nome').value || '—';
+      $('r_idade').textContent = $('idade').value ? $('idade').value + ' anos' : '—';
+      const objetivo = [$('objetivoSelect').value, $('objetivoLivre').value].filter(Boolean).join(' — ');
+      $('r_objetivo').textContent = objetivo || '—';
+      $('r_peso').textContent = getNumber('pesoAtual') ? formatNum(getNumber('pesoAtual'),1) + ' kg' : '—';
+      $('r_gordura').textContent = result.bf ? formatNum(result.bf,1) + '%' : '—';
+      $('r_magra').textContent = result.massaMagra ? formatNum(result.massaMagra,1) + ' kg' : '—';
+      $('r_risco').textContent = risk || '—';
+      $('r_imc').textContent = imc ? formatNum(imc,1) : '—';
+      $('r_classGord').textContent = result.classif || '—';
+      $('r_massaGorda').textContent = result.massaGorda ? formatNum(result.massaGorda,1) + ' kg' : '—';
+      $('r_massaMagra').textContent = result.massaMagra ? formatNum(result.massaMagra,1) + ' kg' : '—';
+
+      $('r_resumoAvaliacao').textContent = $('obsClinica').value || $('obsIniciais').value || 'Sem observações adicionais registradas.';
+      $('r_pontosFortes').textContent = $('metaPerformance').value || 'Não informada.';
+      $('r_pontosAtencao').textContent = $('pontosAtencao').value || 'Sem pontos de atenção registrados.';
+      $('r_direcionamento').textContent = [$('recomendacoes').value, $('estrategiaInicial').value, $('conduta').value].filter(Boolean).join('\n\n') || 'Sem direcionamento inicial registrado.';
+    }
+
+    function calculateAll() {
+      calculateWells();
+      const imc = calculateIMC();
+      const risk = calculateRisk();
+      const result = calculatePollock7();
+      updateKpis(result, imc, risk);
+      calculateComparisons();
+      saveProgress();
+    }
+
+    function collectFormData() {
+      const data = {};
+      document.querySelectorAll('[data-store]').forEach(el => {
+        if (el.type === 'radio') {
+          if (el.checked) data[el.name] = el.value;
+          return;
+        }
+        if (el.type === 'checkbox') {
+          data[el.id] = el.checked;
+          return;
+        }
+        data[el.id] = el.value;
+      });
+      return data;
+    }
+
+    function saveProgress() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(collectFormData()));
+    }
+
+    function loadProgress() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      document.querySelectorAll('[data-store]').forEach(el => {
+        if (el.type === 'radio') {
+          el.checked = data[el.name] === el.value;
+          return;
+        }
+        if (el.type === 'checkbox') {
+          el.checked = !!data[el.id];
+          return;
+        }
+        if (data[el.id] !== undefined) el.value = data[el.id];
+      });
+    }
+
+    function savePhotosState() {
+      const photos = {};
+      ['previewFrontal','previewPerfilDir','previewPerfilEsq','previewPosterior'].forEach(id => {
+        const img = $(id);
+        if (img && img.src && img.src.startsWith('data:image')) photos[id] = img.src;
+      });
+      localStorage.setItem(PHOTO_KEY, JSON.stringify(photos));
+    }
+
+    function loadPhotosState() {
+      const raw = localStorage.getItem(PHOTO_KEY);
+      if (!raw) return;
+      const photos = JSON.parse(raw);
+      Object.entries(photos).forEach(([id, src]) => applyPhotoToPreview(id, src));
+    }
+
+    function applyPhotoToPreview(previewId, src) {
+      const img = $(previewId);
+      if (!img) return;
+      const box = img.closest('.photo-box');
+      const empty = box.querySelector('.photo-empty');
+      img.src = src;
+      img.classList.remove('hidden');
+      if (empty) empty.classList.add('hidden');
+      buildReportPhotos();
+      savePhotosState();
+    }
+
+    function buildReportPhotos() {
+      const container = $('reportPhotos');
+      if (!container) return;
+      const map = [
+        ['previewFrontal','Frontal'],
+        ['previewPerfilDir','Perfil direito'],
+        ['previewPerfilEsq','Perfil esquerdo'],
+        ['previewPosterior','Posterior']
+      ];
+      container.replaceChildren();
+      map.forEach(([id, label]) => {
+        const src = $(id).getAttribute('src');
+        if (!src || !src.startsWith('data:image/')) return;
+        const box = document.createElement('div');
+        box.className = 'photo-box';
+        const image = document.createElement('img');
+        image.src = src;
+        image.alt = label;
+        const caption = document.createElement('div');
+        caption.className = 'caption';
+        caption.textContent = label;
+        box.append(image, caption);
+        container.append(box);
+      });
+      $('reportPhotoSheet').classList.toggle('hidden', !container.children.length);
+    }
+
+    function formatReportDate(value) {
+      if (!value) return 'Não informada';
+      const [year, month, day] = value.split('-');
+      return [day, month, year].join('/');
+    }
+
+    function buildReportDetails(container, titles, filter = () => true) {
+      container.replaceChildren();
+      let count = 0;
+      titles.forEach(title => {
+        const section = [...document.querySelectorAll('#app > .grid > .section[data-title]')]
+          .find(section => section.dataset.title === title);
+        if (!section) return;
+        const details = document.createElement('div');
+        details.className = 'report-detail-grid';
+        const add = (label, value) => {
+          const item = document.createElement('div');
+          item.className = 'report-detail';
+          const caption = document.createElement('span');
+          caption.className = 'report-detail-label';
+          caption.textContent = label;
+          const content = document.createElement('span');
+          content.className = 'report-detail-value';
+          content.textContent = value;
+          item.append(caption, content);
+          details.append(item);
+          count++;
+        };
+        const radios = new Set();
+        section.querySelectorAll('[data-store]').forEach(input => {
+          if (!filter(input)) return;
+          if (input.type === 'radio') {
+            if (!input.checked || radios.has(input.name)) return;
+            radios.add(input.name);
+            const label = input.closest('tr')?.cells[0].textContent.trim()
+              || input.closest('.field')?.querySelector('label')?.textContent.trim() || input.name;
+            add(label, input.value);
+            return;
+          }
+          if (input.type === 'checkbox') {
+            // Desmarcado não distingue uma resposta negativa de uma pergunta não respondida.
+            if (input.checked) add('PAR-Q • Item assinalado', input.closest('label').textContent.trim());
+            return;
+          }
+          if (!input.value.trim() || input.id === 'riscoCardio') return;
+          const row = input.closest('tr');
+          const label = row ? row.cells[0].textContent.trim() + ' • Observação'
+            : input.closest('.field')?.querySelector('label')?.textContent.trim() || input.placeholder || input.id;
+          add(label, input.value);
+        });
+        if (details.children.length) {
+          const heading = document.createElement('h3');
+          heading.textContent = title;
+          container.append(heading, details);
+        }
+      });
+      return count;
+    }
+
+    function prepareReport() {
+      calculateAll();
+      buildReportPhotos();
+      document.querySelectorAll('[data-report-field]').forEach(element => {
+        const value = $(element.dataset.reportField)?.value || '';
+        element.textContent = element.hasAttribute('data-report-date')
+          ? formatReportDate(value) : value || 'Não informado';
+      });
+      const measurements = buildReportDetails($('reportMeasurements'),
+        ['Sinais iniciais', 'Composição corporal', 'Perimetrias', 'Testes físicos'],
+        input => !['pesoAnterior', 'gorduraAnterior', 'massaMagraAnterior'].includes(input.id));
+      if (!measurements) $('reportMeasurements').textContent = 'Nenhuma medida ou teste informado.';
+      const clinical = buildReportDetails($('reportClinical'), ['Anamnese e risco', 'Postura e mobilidade']);
+      $('reportClinicalSheet').classList.toggle('hidden', !clinical);
+    }
+
+    function enableReportMode() {
+      prepareReport();
+      document.body.classList.add('report-mode');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    let reportOriginalTitle;
+    function restoreReportTitle() {
+      if (reportOriginalTitle !== undefined) {
+        document.title = reportOriginalTitle;
+        reportOriginalTitle = undefined;
+      }
+    }
+    function preparePrint() {
+      prepareReport();
+      if (reportOriginalTitle === undefined) reportOriginalTitle = document.title;
+      const name = ($('nome').value.trim() || 'Aluno').replace(/[<>:"/\\|?*]/g, '').replace(/\s+/g, '_');
+      document.title = 'Avaliacao_' + name + ($('dataAvaliacao').value ? '_' + $('dataAvaliacao').value : '');
+    }
+    async function printReport() {
+      preparePrint();
+      try {
+        await Promise.all([...$('reportDocument').querySelectorAll('img')].map(img => img.decode().catch(() => {})));
+        window.print();
+      } finally {
+        restoreReportTitle();
+      }
+    }
+    window.addEventListener('beforeprint', preparePrint);
+    window.addEventListener('afterprint', restoreReportTitle);
+
+    function disableReportMode() {
+      document.body.classList.remove('report-mode');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function newForm() {
+      if (!confirm('Deseja iniciar um novo preenchimento mantendo este arquivo?')) return;
+      clearAllData(true);
+    }
+
+    function clearAllData(silent=false) {
+      if (!silent && !confirm('Isso vai apagar todos os campos preenchidos e fotos salvas localmente. Deseja continuar?')) return;
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(PHOTO_KEY);
+      document.querySelectorAll('[data-store]').forEach(el => {
+        if (el.type === 'radio' || el.type === 'checkbox') el.checked = false;
+        else if (el.id === 'avaliador') el.value = 'JOÃO PAULO | TREINADOR';
+        else el.value = '';
+      });
+      ['previewFrontal','previewPerfilDir','previewPerfilEsq','previewPosterior'].forEach(id => {
+        const img = $(id);
+        if (!img) return;
+        img.src = '';
+        img.classList.add('hidden');
+        const empty = img.closest('.photo-box').querySelector('.photo-empty');
+        if (empty) empty.classList.remove('hidden');
+      });
+      buildReportPhotos();
+      calculateAll();
+    }
+
+    document.querySelectorAll('[data-store]').forEach(el => {
+      el.addEventListener('input', saveProgress);
+      el.addEventListener('change', calculateAll);
+    });
+
+    document.querySelectorAll('.photo-input').forEach(input => {
+      input.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => applyPhotoToPreview(input.dataset.preview, ev.target.result);
+        reader.readAsDataURL(file);
+      });
+    });
+
+    loadProgress();
+    loadPhotosState();
+    updateAge();
+    calculateAll();
+    buildReportPhotos();
+  </script>
+
+</body></html>

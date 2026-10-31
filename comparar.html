@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Comparar avaliações — João Paulo</title>
+  <style>
+    :root{font-family:Arial,sans-serif;color:#202329;background:#f4f5f7;line-height:1.5;--accent:#b20f1f;--line:#dce0e5}*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:28px 22px 70px}a{color:var(--accent)}header{display:flex;justify-content:space-between;gap:20px;align-items:start;margin:24px 0}h1{font-size:32px;line-height:1.15;margin:10px 0}h2{font-size:20px;margin:0 0 16px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0 14px}.muted{color:#596273;font-size:14px}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:bold}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;margin:18px 0}.sources{display:grid;grid-template-columns:1fr 1fr;gap:20px}.sources .card{margin:0}.upload{display:block;padding:18px;background:#faf9f9;border:1px dashed #b6a9ad;border-radius:10px;font-weight:bold;margin:16px 0}.upload input{display:block;max-width:100%;margin-top:12px;font:inherit;font-size:13px}label{display:block;font-size:13px;font-weight:bold;margin-top:12px}input[type=text],input[type=date],input[type=number],textarea{width:100%;font:inherit;padding:10px;border:1px solid #c9cfd8;border-radius:7px;background:#fff;color:#202329}input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #e5a6af;outline-offset:2px}input[type=number]{min-width:95px}textarea{min-height:90px;resize:vertical}.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}button{cursor:pointer;padding:11px 15px;border:1px solid #ccd1d8;background:#fff;border-radius:8px;color:#202329;font-weight:bold;min-height:42px}button.primary{background:var(--accent);border-color:var(--accent);color:white}button:disabled{opacity:.5;cursor:wait}.status{font-size:13px;min-height:42px;color:#596273}.status.error{color:#a51628}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:middle}th{font-size:12px;background:#f5f6f8;color:#596273}td:first-child{min-width:170px}td input{max-width:160px}.difference{font-weight:bold;white-space:nowrap}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.summary>div{background:#f6f7f9;padding:16px;border-radius:10px}.summary strong{display:block;font-size:25px}.notice{border-left:3px solid var(--accent);padding:8px 14px;background:#faf1f3;font-size:13px}.review{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:normal}.review input{margin-top:4px}details{margin-top:12px}pre{max-height:180px;overflow:auto;white-space:pre-wrap;font-size:11px;background:#f5f6f8;padding:12px}.date-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}#message{color:#a51628;font-size:14px;margin-top:12px}footer{font-size:12px;color:#596273;margin-top:26px}@media(max-width:700px){header{display:block}.sources,.summary{grid-template-columns:1fr}main{padding:18px 12px}.card{padding:18px}h1{font-size:27px}.date-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <a href="index.html">← Voltar para a avaliação</a>
+  <header><div><span class="tag">João Paulo • Protótipo para teste</span><h1>O que mudou entre as avaliações?</h1><p class="muted">Carregue os dois PDFs, confira os indicadores e baixe um novo relatório com as diferenças.</p></div><button id="demo" type="button">Usar exemplo fictício</button></header>
+  <div class="sources">
+    <section class="card" aria-labelledby="previousTitle"><span class="tag">01 • Ponto de partida</span><h2 id="previousTitle">Avaliação anterior</h2>
+      <label class="upload">Selecionar PDF anterior<input id="previousFile" type="file" accept="application/pdf,.pdf"></label>
+      <p class="status" id="previousStatus" role="status">Nenhum PDF selecionado. Você também pode preencher os valores manualmente.</p>
+      <label for="previousName">Nome do aluno no PDF anterior</label><input id="previousName" type="text" maxlength="150" autocomplete="off">
+      <label for="previousDate">Data da avaliação anterior</label><input id="previousDate" type="date">
+      <details><summary>Texto identificado no PDF</summary><pre id="previousText">Nenhum texto extraído.</pre></details>
+    </section>
+    <section class="card" aria-labelledby="currentTitle"><span class="tag">02 • Momento atual</span><h2 id="currentTitle">Avaliação atual</h2>
+      <label class="upload">Selecionar PDF atual<input id="currentFile" type="file" accept="application/pdf,.pdf"></label>
+      <p class="status" id="currentStatus" role="status">Nenhum PDF selecionado. Você também pode preencher os valores manualmente.</p>
+      <label for="currentName">Nome do aluno no PDF atual</label><input id="currentName" type="text" maxlength="150" autocomplete="off">
+      <label for="currentDate">Data da avaliação atual</label><input id="currentDate" type="date">
+      <details><summary>Texto identificado no PDF</summary><pre id="currentText">Nenhum texto extraído.</pre></details>
+    </section>
+  </div>
+  <section class="card"><h2>Confira os dados antes de comparar</h2><p class="muted">A leitura automática procura indicadores conhecidos e pode precisar de correção. Campos vazios significam “não informado”; zero é um resultado válido. Use a mesma unidade nas duas avaliações.</p>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Indicador</th><th scope="col">Anterior</th><th scope="col">Atual</th><th scope="col">Diferença</th></tr></thead><tbody id="metricRows"></tbody></table></div>
+  </section>
+  <section class="card"><span class="tag">03 • Relatório comparativo</span><h2>Resultado da comparação</h2>
+    <div class="summary"><div><strong id="compared">0</strong><span>indicadores comparáveis</span></div><div><strong id="changed">0</strong><span>indicadores com mudança</span></div><div><strong id="stable">0</strong><span>indicadores estáveis</span></div></div>
+    <p class="notice">Diferença = atual − anterior. Gordura corporal varia em pontos percentuais (p.p.). Aumento ou redução não representa automaticamente melhora ou piora.</p>
+    <label for="notes">Observações do avaliador (opcional)</label><textarea id="notes" maxlength="5000" placeholder="Registre sua interpretação das mudanças e os próximos passos."></textarea>
+    <label class="review"><input id="reviewed" type="checkbox">Conferi os nomes, as datas, os valores e as unidades das duas avaliações.</label>
+    <div class="actions" style="margin-top:18px"><button class="primary" id="download" type="button">Baixar PDF comparativo</button><button id="samplePrevious" type="button">Baixar PDF anterior de exemplo</button><button id="sampleCurrent" type="button">Baixar PDF atual de exemplo</button></div>
+    <p id="message" role="status"></p>
+  </section>
+  <footer>Os PDFs são processados no seu navegador e não são enviados a um servidor. A leitura usa <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener noreferrer">PDF.js</a> e, quando não há texto pesquisável, <a href="https://github.com/naptha/tesseract.js" target="_blank" rel="noopener noreferrer">Tesseract.js</a> para leitura visual (OCR). Precisa de internet para carregar as bibliotecas e o idioma português. O OCR pode demorar e confundir caracteres: confira os valores antes de comparar. O preenchimento manual, o exemplo e a geração do PDF funcionam sem internet. Os arquivos e valores não são guardados ao fechar esta página.</footer>
+</main>
+<script src="comparison-core.js"></script>
+<script src="comparison-reader.js"></script>
+<script src="comparison.js"></script>
+</body>
+</html>
